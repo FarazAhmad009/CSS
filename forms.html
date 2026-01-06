@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+
+<body>
+    <form action="">
+        Username
+        <input type="text" placeholder="Enter Username">
+        <br>
+        password
+        <input type="password" placeholder="Enter Password">
+        <br>
+        Numbers
+        <input type="number" placeholder="Enter your name">
+        <br>
+        time
+        <input type="time">
+        <br>
+        <input type="color">
+        <br>
+        <label for="nickName">Enter your nickName:</label>
+        <input type="text" placeholder="Enter you sudo name" id="nickName">
+        <br>
+        <label>
+            Enter password:
+            <input type="password">
+        </label>
+    </form>
+    <hr>
+
+    <!-- Practice Qs 8 -->
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Search in to Google" name="q">
+        <button>Search</button>
+    </form>
+    <form action="https://web.facebook.com/search/top/">
+        <input type="text" name="q" placeholder="Search in to facebook">
+        <button>clik</button>
+    </form>
+
+    <form action="/server">
+        <input type="checkbox" name="age" id="age">
+        <label for="age">I'm 18+</label>
+        <!-- Url Mai name = value ka hesab say infomation pass hoti hai  -->
+        <div><input type="radio" name="Fruit" id="Apple" value="Apple">
+            <label for="Apple">Apple</label>
+            <input type="radio" name="Fruit" id="Mango" value="Mango">
+            <label for="Mango">Mango</label>
+            <input type="radio" name="Fruit" id="banana" value="banana">
+            <label for="banana">banana</label>
+        </div>
+        <br>
+        <div>
+            Choose Your Subject :
+            <input type="checkbox" name="Sub" id="Math" value="Math">
+            <label for="Math">Math</label>
+            <input type="checkbox" name="Sub" id="Chem" value="chem">
+            <label for="Chem">Chem</label>
+            <input type="checkbox" name="Sub" id="English" value="eng">
+            <label for="English">English</label>
+        </div>
+        <div>
+            Choose your profetion :
+            <select name="profetion" id="profetion">
+                <option>Select your option</option>
+                <Option value="Stu">Student</Option>
+                <Option value="dev">Developer</Option>
+            </select>
+        </div>
+        <label for="vol">Select your voluem : </label>
+        <input type="range" id="vol" min="0" max="100" name="vol" value="70">
+        <label for="feedback">Give your value able feedback</label>
+        <textarea name="feedback" id="feedback" placeholder="Write your feedback here" rows="5" cols="20"></textarea>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <form action="/action">
+        <h1 style="text-align: center;">Practice Qs 9</h1>
+        <hr>
+        <h2>Regiter Form</h2>
+        <div>
+            <input type="text" name="fname" placeholder="First Name">
+            <input type="text" name="lname" placeholder="Last Name">
+        </div>
+        <br>
+        <div>
+            <label for="Gender">Please Select Gender:</label>
+        <select name="Gender" id="Gender">
+            
+            <option value="m">Male</option>
+            <option value="c">Costem</option>
+            <option value="f">Female</option>
+        </select>
+        <br>
+        </div>
+        <div>
+            Do you agree all terms of Service?
+        <input type="checkbox" name="Terms" id="chekbox">
+        <label for="checkbox">Yes I agree</label>
+    </div>
+        <br>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
