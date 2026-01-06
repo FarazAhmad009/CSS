@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        .emg-container {
+            height: 70vh;
+            width: 70vw;
+            background-color: #f0f0f0;
+            position: relative;
+            top: 40px;
+            left: 80px;
+            overflow: hidden; /* Ball ko container ke andar rakhne ke liye */
+        }
+
+        .emg {
+            width: 100px;
+            height: 100px;
+            background-image: url(https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation: bounce 1.5s ease-out infinite alternate, moveX 3s linear infinite;
+        }
+
+        /* Horizontal Movement */
+        @keyframes moveX {
+            from {
+                left: 0;
+            }
+            to {
+                left: 850px;
+            }
+        }
+
+        /* Vertical Bouncing */
+        @keyframes bounce {
+            from {
+                bottom: 0;
+            }
+            25% {
+                bottom: 200px;
+            }
+            50% {
+                bottom: 0px;
+            }
+            75% {
+                bottom: 150px;
+            }
+            to {
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emg-container">
+        <div class="emg"></div>
+    </div>
+</body>
+</html>

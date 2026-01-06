@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow</title>
+    <style>
+        .container {
+            height: 70vh;
+            width: 70vw;
+            background-color: #be7676;
+            position: relative;
+            top: 40px;
+            left: 80px;
+            overflow: hidden; /* Ball ko container ke andar rakhne ke liye */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .emg {
+            width: 100px;
+            height: 100px;
+            background-image: url(https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            transition: transform 0.5s;
+        }
+        .emg:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emg"></div>
+        
+    </div>
+</body>
+</html>
